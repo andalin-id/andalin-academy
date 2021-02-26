@@ -1,0 +1,310 @@
+@charset "utf-8";
+/***********************************************
+Theme Name: One Startup
+Developer: Kenton Web Design & Kenton Themes
+Designer: Artur Bobinski
+Developer & Designer URL: http://www.kentonwebdesign.com
+Version: 1.0
+Tags: HTML5, CSS3, IE8, IE9, IE10, Firefox, Safari, Chrome
+Release Date: June 2013
+**********************************************/
+
+body {
+	border-top:8px solid #23303E;
+	border-bottom:8px solid #314357;
+	font-smooth:always;
+	background-color:#34495E;
+}
+img, object, embed, video {
+}
+.hide {
+	display:none;
+	visibility:hidden;
+}
+h1 {
+	margin:0;
+	padding:0;
+}
+h2 {
+	font-family:Corbel, Arial, Helvetica, sans-serif;
+	font-size:50px;
+	color:#FFFFFF;
+	text-align:center;
+}
+h2 span {
+	margin:0;
+	margin-top:-15px;
+	margin-bottom:-20px;
+	font-size:21px;
+	font-weight:normal;
+	color:#D2FF4D;
+	text-align:left;
+	display:block;
+}
+h3 {
+	font-family:Corbel, Arial, Arial, Helvetica, sans-serif;
+	font-size:50px;
+	font-weight:normal;
+	color:#2CC36B;
+	text-align:center;
+}
+a {
+	text-decoration:none;
+}
+p {
+	width:100%;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFFFFF;
+	line-height:21px;
+}
+hr {
+	max-width:606px;
+	margin:0 auto;
+	border:none;
+	border-top:1px solid #657786;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+
+h2 span {
+	text-indent:0;
+	text-align:center !important;
+}
+header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center !important;
+}
+header .logo {
+	min-width:176px;
+	min-height:38px;
+	margin-top:55px;
+	margin-bottom:50px;
+	display:block;
+	background:url(../images/images-logo.png) no-repeat center;
+	display:block;
+	clear:both;
+}
+.content {
+}
+.content .timeline {
+	min-height:50px;
+	margin-top:-71px;
+	margin-bottom:20px;
+	background:#23303E;
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=75);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.75;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.75;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.75;
+}
+.screenshot {
+	max-width:100%;
+	min-height:20%;
+	text-align:center;
+	display:block;
+}
+.content .timeline h2 {
+	margin:0;
+	padding:0;
+	padding-top:15px;
+	font-family:Corbel, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	color:#FFFFFF;
+}
+.notify-box {
+	min-height:284px;
+	border-bottom:8px solid #2ECC71;
+	border-top:8px solid #2ECC71;
+	background:#2CC36B;
+	display:block;
+	clear:both;
+}
+.notify-box h2 {
+	font-size:40px;
+	padding-right:10px;
+	padding-left:10px;
+	line-height:42px;
+}
+.notify-box .form {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+.notify-box form input[type=email],
+.notify-box form input[type=text] {
+	min-width:245px;
+	min-height:43px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:4px 10px 5px 10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFFFFF;
+	text-align:center;
+	border:none;
+	background:#23303E;
+	display:block;
+	clear:both;
+}
+.notify-box form input[type=email]:focus,
+.notify-box form input[type=text]:focus {
+	outline:none;
+}
+.notify-box form input[type=submit] {
+	min-width:150px;
+	min-height:53px;
+	margin-top:8px;
+	padding:4px 20px 3px 20px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFFFFF;
+	text-align:center;
+	border:none;
+	background:#2C8C6B;
+}
+.notify-box form input[type=submit]:hover {
+	background:#7FC38D;
+}
+footer {
+	padding-top:15px;
+	padding-bottom:18px;
+	background-color:#23303E;
+	text-align:center;
+}
+footer p .social {
+	margin-top:15px;
+	font-size:21px;
+	font-weight:bold;
+	color:#2CC36B;
+	clear:both;
+	display:block;
+}
+footer p .social:hover {
+	color:#7FC38D;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+h2 {
+	margin-top:65px;
+}
+h2 span {
+	text-indent:200px;
+	text-align:left;
+}
+header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+}
+.content .timeline {
+	max-height:100px;
+	margin-top:-110px;
+}
+.content .timeline h2 {
+	margin:0;
+	padding-top:25px;
+	padding-bottom:25px;
+	line-height:normal;
+	font-size:32px;
+}
+.screenshot {
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+.notify-box form input[type=email],
+.notify-box form input[type=text] {
+	min-width:325px;
+	clear:none !important;
+	display:inline-block;
+}
+.notify-box form input[type=submit] {
+	min-width:135px;
+	margin-left:20px;
+	clear:none !important;
+}
+footer {
+	text-align:left;
+}
+footer p .social {
+	margin-top:-15px;
+	float:right;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+}
+.notify-box form input[type=email],
+.notify-box form input[type=text] {
+	min-width:325px;
+}
+.notify-box form input[type=submit] {
+	min-width:135px;
+}
+footer {
+	text-align:left;
+}
+footer p .social {
+	margin-top:-15px;
+	float:right;
+}
+}

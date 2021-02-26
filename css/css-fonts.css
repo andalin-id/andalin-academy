@@ -1,0 +1,23 @@
+
+/***********************************************
+Theme Name: One Startup
+Developer: Kenton Web Design & Kenton Themes
+Designer: Artur Bobinski
+Developer & Designer URL: http://www.kentonwebdesign.com
+Version: 1.0
+Tags: HTML5, CSS3, IE8, IE9, IE10, Firefox, Safari, Chrome
+Release Date: June 2013
+**********************************************/
+
+@font-face
+{
+font-family: Kaushan;
+src: url('../fonts/fonts-KaushanScript.ttf'),
+     url('../fonts/fonts-KaushanScript.eot'); /* IE9 */
+}
+@font-face
+{
+font-family: Corbel;
+src: url('../fonts/fonts-corbel.ttf'),
+     url('../fonts/fonts-KaushanScript.eot'); /* IE9 */
+}
